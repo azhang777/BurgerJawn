@@ -1,0 +1,51 @@
+.logo {
+  max-width: 55px;
+}
+
+.link-title {
+  color: #ffbb0eff; /* Use the default color */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-title:hover {
+  color: #ffbb0eff;
+}
+
+.text-title {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.yellow {
+  color: #ffbb0eff;
+}
+
+.btn-primary {
+  min-width: 100px;
+  background-color: #ffbb0eff;
+  border-color: #ffbd14;
+}
+
+.btn-primary:hover {
+  background-color: #ffbb0eff;
+  border-color: #ffbd14;
+  filter: brightness(102%);
+}
+
+.btn-primary:focus {
+  background-color: #ffbb0eff;
+  border-color: #ffbd14;
+}
+
+.burger-img {
+  width: 600px;
+}
+
+.custom-padding-left {
+  padding-left: 70px;
+}
+
+@media (max-width: 1024px) {
+  .burger-img {
+    width: 500px;
+  }
+}
