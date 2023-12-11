@@ -47,6 +47,9 @@ body {
   width: 600px;
 }
 
+.chef-img {
+  width: 100px;
+}
 .custom-padding-left {
   padding-left: 300px;
 }
