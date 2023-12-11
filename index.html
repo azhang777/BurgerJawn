@@ -21,6 +21,7 @@
       href="style.css"
     />
   </head>
+   <!--ICONS USED FROM https://www.flaticon.com/free-icons/experience-->
   <body>
     <header>
       <div class="container-fluid p-4 d-flex justify-content-center">
@@ -35,14 +36,34 @@
         </div>
         <div class="col-11 d-flex justify-content-between ">
           <a
-            href="#"
+            href="index.html"
             class="link-title ms-5"
             ><h1 class="text-title fw-bold">BurgerJawn</h1></a>
           <button
+            type="button"
             class="btn btn-primary rounded-pill ps-5 pe-5 shadow-sm fw-bold mt-3"
+            data-bs-toggle="modal" data-bs-target="#exampleModal"
           >
             Sign up
           </button>
+          <!--Modal Popup-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up Popup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5">
+                  Sign up functionality to be developed! Stay tooned!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -54,7 +75,7 @@
           <div class="row py-5 justify-content-between">
             <div class="col-4">
                 <img
-                src="./public/burger.png"
+                src="/burger.png"
                 class="burger-img"
                 alt="burger"
               />
@@ -123,67 +144,72 @@
       <section class="chef">
         <div class="container bg-danger rounded-pill">
           <div class="row py-5">
-            <div class="col-5 d-flex justify-content-end align-items-center"><h1 class="fw-bold mt-4 text-white">The</h1></div>
-            <div class="col-2 d-flex d-flex flex-column align-items-center">
-              <img class="chef-img" src="./chef.png" alt="chef-img">
-              <h4 class="fw-bold pt-5 text-white">Mary Ann</h4>
+            <div class="col-5 d-flex justify-content-end align-items-center"><h1 class="fw-bold mt-2 text-white">The</h1></div>
+            <div class="col-2 d-flex flex-column align-items-center">
+              <div class="circle-bg">
+                <a
+            href="test.html"
+            class="link-title"
+          > <img class="chef-img" src="./chef.png" alt="chef-img"> </a>
+                
+              </div>
+              <h4 class="chef-name fw-bold text-white m-0">Mary Ann</h4>
             </div>
-            <div class="col-5 d-flex justify-content-start align-items-center"><h1 class="fw-bold mt-4 text-white">Chef</h1></div>
+            <div class="col-5 d-flex justify-content-start align-items-center"><h1 class="fw-bold mt-2 text-white">Chef</h1></div>
           </div>
         </div>
       </section>
 
-      
       <!--Review-->
       <section class="review">
-        <div class="container">
-          <div class="row text-center"><h2>Reviews</h2></div>
+        <div class="container pb-5">
+          <div class="row py-4 mt-3 text-center"><h2 class="text-uppercase fw-bold">Testimonials from customers</h2></div>
           <div class="row justify-content-between">
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;">
+                <img class="card-img-top" src="./public/man.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Fantastic! - Alex</p>
                 </div>
               </div>
             </div>
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;"> <!--border-0 border-3 border-bottom creates the design, i do not know how though; it deletes the border outline, then it creates the bottom border again, then it rounds it, then it gives it width?-->
+                <img class="card-img-top" src="./public/woman.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Great! - Caityln</p>
                 </div>
               </div>
             </div>
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;">
+                <img class="card-img-top" src="./public/man3.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Outstanding! - Zack</p>
                 </div>
               </div>
             </div>
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;">
+                <img class="card-img-top" src="./public/man2.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Wow! - Robert</p>
                 </div>
               </div>
             </div>
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;">
+                <img class="card-img-top " src="./public/woman2.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Its alright. - Lily</p>
                 </div>
               </div>
             </div>
             <div class="col-2 d-flex justify-content-center">
-              <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center" style="width: 12rem;">
+                <img class="card-img-top" src="./public/woman3.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">ipsum</p>
+                  <p class="card-text fw-bold">Awesome! - Rachel</p>
                 </div>
               </div>
             </div>
@@ -191,9 +217,14 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="container p-3 d-flex justify-content-center">
-        <p>&copy; Copyright BurgerJawn</p>
+      <div class="container-fluid bg-warning p-4 mt-3 d-flex justify-content-center">
+        <div class="row-12 py-3">
+          <a href="test.html" class="link-title">
+            <p class="fw-bold m-0 text-dark">&copy; Copyright BurgerJawn <span id="currentYear"> </span></p>
+          </a>
+        </div>
       </div>
     </footer>
     <script

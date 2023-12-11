@@ -48,8 +48,14 @@ body {
 }
 
 .chef-img {
-  width: 100px;
+  width: 150px;
 }
+
+.card-img-top {
+  max-width: 140px;
+  padding-top: 16px;
+}
+
 .custom-padding-left {
   padding-left: 300px;
 }
@@ -57,6 +63,14 @@ body {
 .custom-shadow {
   box-shadow: 1px 2px 5px rgba(212, 50, 67, 1);
 }
+
+.circle-bg {
+  width: calc(fit-content + 100px);
+  height: calc(fit-content + 100px);
+  border-radius: 50%;
+  background-color: #ffbd14;
+}
+
 @media (max-width: 1024px) {
   .burger-img {
     width: 500px;
